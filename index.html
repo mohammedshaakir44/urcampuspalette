@@ -39,8 +39,9 @@ tailwind.config = {
     <div class="flex items-center gap-3">
       <div class="w-10 h-10 rounded-full bg-maroon text-beige flex items-center justify-center font-display font-bold text-lg">N</div>
       <div>
-        <div class="font-display text-xl text-maroon font-bold leading-none">NITT Merch</div>
-        <div class="text-[10px] tracking-[0.2em] text-midnight/60 uppercase">Est. 1964</div>
+        <!-- Added 'editable' class -->
+        <div class="editable font-display text-xl text-maroon font-bold leading-none">NITT Merch</div>
+        <div class="editable text-[10px] tracking-[0.2em] text-midnight/60 uppercase">Est. 1964</div>
       </div>
     </div>
     <div class="hidden md:flex items-center gap-8 text-sm font-medium">
@@ -56,7 +57,8 @@ tailwind.config = {
   </div>
 </nav>
 
-<section id="story" class="pt-32 pb-20 px-6 relative overflow-hidden">
+<!-- Added 'cms-editable' to the whole section -->
+<section id="story" class="editable pt-32 pb-20 px-6 relative overflow-hidden">
   <div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: radial-gradient(circle at 20% 30%, #5C1E2E 0%, transparent 50%), radial-gradient(circle at 80% 70%, #1B2A4E 0%, transparent 50%);"></div>
   <div class="max-w-6xl mx-auto relative">
     <div class="text-center">
@@ -85,34 +87,34 @@ tailwind.config = {
 
     <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 hero-fade">
       <div class="text-center p-6 border-l border-maroon/20">
-        <div class="font-display text-4xl font-bold text-maroon">1964</div>
-        <div class="text-xs uppercase tracking-wider text-midnight/60 mt-1">Established</div>
+        <div class="editable font-display text-4xl font-bold text-maroon">1964</div>
+        <div class="editable text-xs uppercase tracking-wider text-midnight/60 mt-1">Established</div>
       </div>
       <div class="text-center p-6 border-l border-maroon/20">
-        <div class="font-display text-4xl font-bold text-maroon">800</div>
-        <div class="text-xs uppercase tracking-wider text-midnight/60 mt-1">Acres of Legacy</div>
+        <div class="editable font-display text-4xl font-bold text-maroon">800</div>
+        <div class="editable text-xs uppercase tracking-wider text-midnight/60 mt-1">Acres of Legacy</div>
       </div>
       <div class="text-center p-6 border-l border-maroon/20">
-        <div class="font-display text-4xl font-bold text-maroon">174ft</div>
-        <div class="text-xs uppercase tracking-wider text-midnight/60 mt-1">Clock Tower</div>
+        <div class="editable font-display text-4xl font-bold text-maroon">174ft</div>
+        <div class="editable text-xs uppercase tracking-wider text-midnight/60 mt-1">Clock Tower</div>
       </div>
       <div class="text-center p-6 border-l border-maroon/20">
-        <div class="font-display text-4xl font-bold text-maroon">∞</div>
-        <div class="text-xs uppercase tracking-wider text-midnight/60 mt-1">Alumni Pride</div>
+        <div class="editable font-display text-4xl font-bold text-maroon">∞</div>
+        <div class="editable text-xs uppercase tracking-wider text-midnight/60 mt-1">Alumni Pride</div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="px-6 py-12 bg-beige/40">
+<section class="editable px-6 py-12 bg-beige/40">
   <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
     <div class="flex items-start gap-4">
       <div class="w-12 h-12 rounded-full bg-maroon/10 text-maroon flex items-center justify-center flex-shrink-0">
         <i data-lucide="shirt" class="w-5 h-5"></i>
       </div>
       <div>
-        <div class="font-semibold text-midnight">Apparel</div>
-        <div class="text-sm text-midnight/60">Hoodies, Tees & Polos celebrating campus landmarks.</div>
+        <div class="editable font-semibold text-midnight">Apparel</div>
+        <div class="editable text-sm text-midnight/60">Hoodies, Tees & Polos celebrating campus landmarks.</div>
       </div>
     </div>
     <div class="flex items-start gap-4">
@@ -120,8 +122,8 @@ tailwind.config = {
         <i data-lucide="briefcase" class="w-5 h-5"></i>
       </div>
       <div>
-        <div class="font-semibold text-midnight">Accessories</div>
-        <div class="text-sm text-midnight/60">Festember & Pragyan totes, sleeves, pins, caps.</div>
+        <div class="editable font-semibold text-midnight">Accessories</div>
+        <div class="editable text-sm text-midnight/60">Festember & Pragyan totes, sleeves, pins, caps.</div>
       </div>
     </div>
     <div class="flex items-start gap-4">
@@ -129,8 +131,8 @@ tailwind.config = {
         <i data-lucide="book-open" class="w-5 h-5"></i>
       </div>
       <div>
-        <div class="font-semibold text-midnight">Stationery</div>
-        <div class="text-sm text-midnight/60">Embossed journals & pens carrying our motto.</div>
+        <div class="editable font-semibold text-midnight">Stationery</div>
+        <div class="editable text-sm text-midnight/60">Embossed journals & pens carrying our motto.</div>
       </div>
     </div>
   </div>
@@ -140,40 +142,40 @@ tailwind.config = {
   <div class="max-w-7xl mx-auto">
     <div class="flex items-end justify-between mb-12 flex-wrap gap-4 reveal">
       <div>
-        <div class="text-xs uppercase tracking-[0.3em] text-totem font-semibold mb-3">Featured Collection</div>
-        <h2 class="font-display text-4xl md:text-5xl font-bold text-maroon">Wear the Landmarks.</h2>
+        <div class="editable text-xs uppercase tracking-[0.3em] text-totem font-semibold mb-3">Featured Collection</div>
+        <h2 class="editable font-display text-4xl md:text-5xl font-bold text-maroon">Wear the Landmarks.</h2>
       </div>
-      <p class="max-w-md text-midnight/60">Three hero pieces, crafted in the institute's official palette—locally relevant, globally competitive.</p>
+      <p class="editable max-w-md text-midnight/60">Three hero pieces, crafted in the institute's official palette—locally relevant, globally competitive.</p>
     </div>
 
     <div id="product-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
   </div>
 </section>
 
-<section id="logistics" class="px-6 py-24 bg-midnight text-beige relative overflow-hidden">
+<section id="logistics" class="editable px-6 py-24 bg-midnight text-beige relative overflow-hidden">
   <div class="absolute inset-0 opacity-5" style="background-image: linear-gradient(45deg, transparent 48%, #EDE3D2 49%, #EDE3D2 51%, transparent 52%); background-size: 30px 30px;"></div>
   <div class="max-w-6xl mx-auto relative">
     <div class="text-center mb-16 reveal">
-      <div class="text-xs uppercase tracking-[0.3em] text-totem font-semibold mb-3">Order & Logistics</div>
-      <h2 class="font-display text-4xl md:text-5xl font-bold">From Campus to <span class="italic">Wherever You Are.</span></h2>
+      <div class="editable text-xs uppercase tracking-[0.3em] text-totem font-semibold mb-3">Order & Logistics</div>
+      <h2 class="editable font-display text-4xl md:text-5xl font-bold">From Campus to <span class="italic">Wherever You Are.</span></h2>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="p-8 bg-beige/5 border border-beige/10 rounded-2xl hover:border-totem/40 transition reveal">
+      <div class="editable p-8 bg-beige/5 border border-beige/10 rounded-2xl hover:border-totem/40 transition reveal">
         <div class="w-12 h-12 rounded-xl bg-totem/20 text-totem flex items-center justify-center mb-5">
           <i data-lucide="map-pin" class="w-5 h-5"></i>
         </div>
         <h3 class="font-display text-2xl font-bold mb-2">Self-Pickup</h3>
         <p class="text-beige/70 text-sm leading-relaxed">Collect from the Student Activity Centre (SAC) or the Octagon Centre help desk.</p>
       </div>
-      <div class="p-8 bg-beige/5 border border-beige/10 rounded-2xl hover:border-totem/40 transition reveal">
+      <div class="editable p-8 bg-beige/5 border border-beige/10 rounded-2xl hover:border-totem/40 transition reveal">
         <div class="w-12 h-12 rounded-xl bg-totem/20 text-totem flex items-center justify-center mb-5">
           <i data-lucide="truck" class="w-5 h-5"></i>
         </div>
         <h3 class="font-display text-2xl font-bold mb-2">Hostel Delivery</h3>
         <p class="text-beige/70 text-sm leading-relaxed">Free delivery to Agate, Coral, Diamond & all hostels for orders above ₹999.</p>
       </div>
-      <div class="p-8 bg-beige/5 border border-beige/10 rounded-2xl hover:border-totem/40 transition reveal">
+      <div class="editable p-8 bg-beige/5 border border-beige/10 rounded-2xl hover:border-totem/40 transition reveal">
         <div class="w-12 h-12 rounded-xl bg-totem/20 text-totem flex items-center justify-center mb-5">
           <i data-lucide="globe" class="w-5 h-5"></i>
         </div>
@@ -183,13 +185,13 @@ tailwind.config = {
     </div>
 
     <div class="mt-16 text-center reveal">
-      <div class="font-display text-2xl italic text-totem">Satyameva Jayate</div>
-      <div class="text-xs uppercase tracking-[0.3em] text-beige/50 mt-2">Truth Alone Triumphs</div>
+      <div class="editable font-display text-2xl italic text-totem">Satyameva Jayate</div>
+      <div class="editable text-xs uppercase tracking-[0.3em] text-beige/50 mt-2">Truth Alone Triumphs</div>
     </div>
   </div>
 </section>
 
-<footer class="bg-maroon text-beige px-6 py-12">
+<footer class="editable bg-maroon text-beige px-6 py-12">
   <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
     <div class="flex items-center gap-3">
       <div class="w-10 h-10 rounded-full bg-beige text-maroon flex items-center justify-center font-display font-bold text-lg">N</div>
