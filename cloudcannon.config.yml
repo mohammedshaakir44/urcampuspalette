@@ -5,9 +5,10 @@ ssg_name: nextjs
 
 # 2. Define important paths
 paths:
-  static: public      # Where your images/assets live
-  src: src           # Where your components/pages live (if using src folder)
-  data: data         # Where your JSON/YAML data files live
+  static: public       # Where your images/assets live
+  uploads: public/uploads # Added this line to fix the "Invalid global paths" error
+  src: src             # Where your components/pages live (if using src folder)
+  data: data           # Where your JSON/YAML data files live
 
 # 3. Configure the Editor
 _enabled_editors:
