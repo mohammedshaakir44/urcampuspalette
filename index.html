@@ -38,8 +38,7 @@ tailwind.config = {
   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
     <div class="flex items-center gap-3">
       <div class="w-10 h-10 rounded-full bg-maroon text-beige flex items-center justify-center font-display font-bold text-lg">N</div>
-      <div>
-        <!-- Added 'editable' class -->
+      <div data-editable>
         <div class="editable font-display text-xl text-maroon font-bold leading-none">NITT Merch</div>
         <div class="editable text-[10px] tracking-[0.2em] text-midnight/60 uppercase">Est. 1964</div>
       </div>
@@ -57,8 +56,8 @@ tailwind.config = {
   </div>
 </nav>
 
-<!-- Added 'cms-editable' to the whole section -->
-<section id="story" class="editable pt-32 pb-20 px-6 relative overflow-hidden">
+<!-- Main Hero Section with Source Editing enabled -->
+<section id="story" data-cms-bind="index.html" data-editable="source" class="pt-32 pb-20 px-6 relative overflow-hidden">
   <div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: radial-gradient(circle at 20% 30%, #5C1E2E 0%, transparent 50%), radial-gradient(circle at 80% 70%, #1B2A4E 0%, transparent 50%);"></div>
   <div class="max-w-6xl mx-auto relative">
     <div class="text-center">
@@ -66,21 +65,18 @@ tailwind.config = {
         <span class="w-1.5 h-1.5 rounded-full bg-totem animate-pulse"></span>
         Since 1964 · 800 Acres · Tiruchirappalli
       </div>
-      <h1 class="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-maroon leading-[1.05] tracking-tight hero-fade">
+      <h1 class="editable font-display text-5xl md:text-7xl lg:text-8xl font-bold text-maroon leading-[1.05] tracking-tight hero-fade">
         Wear the Spirit<br/>
         <span class="italic text-midnight">of the 800-Acre</span><br/>
         Legacy.
       </h1>
-      <p class="mt-8 max-w-2xl mx-auto text-lg text-midnight/70 leading-relaxed hero-fade">
+      <p class="editable mt-8 max-w-2xl mx-auto text-lg text-midnight/70 leading-relaxed hero-fade">
         From the shadow of the <span class="text-maroon font-semibold">174-foot Clock Tower</span> to the innovative corridors of the <span class="text-midnight font-semibold">Orion complex</span>—every thread tells a story of ambition, grit, and <em>Satyameva Jayate</em>.
       </p>
       <div class="mt-10 flex flex-wrap items-center justify-center gap-4 hero-fade">
         <a href="#products" class="group bg-maroon hover:bg-totem text-beige px-8 py-3.5 rounded-full font-medium transition-all flex items-center gap-2 shadow-lg shadow-maroon/20">
           Shop the Collection
           <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
-        </a>
-        <a href="#logistics" class="px-8 py-3.5 rounded-full font-medium border border-midnight/20 hover:border-maroon hover:text-maroon transition">
-          Delivery Info
         </a>
       </div>
     </div>
@@ -106,7 +102,7 @@ tailwind.config = {
   </div>
 </section>
 
-<section class="editable px-6 py-12 bg-beige/40">
+<section data-editable="source" class="px-6 py-12 bg-beige/40">
   <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
     <div class="flex items-start gap-4">
       <div class="w-12 h-12 rounded-full bg-maroon/10 text-maroon flex items-center justify-center flex-shrink-0">
@@ -140,7 +136,7 @@ tailwind.config = {
 
 <section id="products" class="px-6 py-24">
   <div class="max-w-7xl mx-auto">
-    <div class="flex items-end justify-between mb-12 flex-wrap gap-4 reveal">
+    <div data-editable="source" class="flex items-end justify-between mb-12 flex-wrap gap-4 reveal">
       <div>
         <div class="editable text-xs uppercase tracking-[0.3em] text-totem font-semibold mb-3">Featured Collection</div>
         <h2 class="editable font-display text-4xl md:text-5xl font-bold text-maroon">Wear the Landmarks.</h2>
@@ -152,7 +148,7 @@ tailwind.config = {
   </div>
 </section>
 
-<section id="logistics" class="editable px-6 py-24 bg-midnight text-beige relative overflow-hidden">
+<section id="logistics" data-editable="source" class="px-6 py-24 bg-midnight text-beige relative overflow-hidden">
   <div class="absolute inset-0 opacity-5" style="background-image: linear-gradient(45deg, transparent 48%, #EDE3D2 49%, #EDE3D2 51%, transparent 52%); background-size: 30px 30px;"></div>
   <div class="max-w-6xl mx-auto relative">
     <div class="text-center mb-16 reveal">
@@ -191,16 +187,16 @@ tailwind.config = {
   </div>
 </section>
 
-<footer class="editable bg-maroon text-beige px-6 py-12">
+<footer data-editable="source" class="bg-maroon text-beige px-6 py-12">
   <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
     <div class="flex items-center gap-3">
       <div class="w-10 h-10 rounded-full bg-beige text-maroon flex items-center justify-center font-display font-bold text-lg">N</div>
       <div>
-        <div class="font-display text-xl font-bold leading-none">NITT Merch Store</div>
+        <div class="editable font-display text-xl font-bold leading-none">NITT Merch Store</div>
         <div class="text-xs tracking-[0.2em] text-beige/60 uppercase">Wear the Legacy</div>
       </div>
     </div>
-    <div class="text-sm text-beige/70 text-center md:text-right">
+    <div class="editable text-sm text-beige/70 text-center md:text-right">
       © 2026 NIT Tiruchirappalli · For bulk orders, contact the Student Council Merchandise Wing.
     </div>
   </div>
